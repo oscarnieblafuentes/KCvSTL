@@ -16,6 +16,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var stlbg: UIImageView!
     
+    @IBOutlet weak var ppbg: UIImageView!
     
     @IBOutlet weak var kcbg: UIImageView!
     
@@ -26,8 +27,10 @@ class ViewController: UIViewController {
     @IBOutlet weak var BLUEBUTTON: UIButton!
     
     
+    @IBOutlet weak var YELLOWBUTTON: UIButton!
     
     
+    @IBOutlet weak var tMessage: UITextField!
     
     
     
@@ -47,9 +50,12 @@ class ViewController: UIViewController {
     @IBAction func KCbest(sender: AnyObject) {
         bg.hidden = true
         stlbg.hidden = true
+        ppbg.hidden = true
         kcbg.hidden = false
         REDBUTTON.hidden = true
+        YELLOWBUTTON.hidden = true
         BLUEBUTTON.hidden = false
+        tMessage.hidden = true
     
     }
     
@@ -58,12 +64,26 @@ class ViewController: UIViewController {
     @IBAction func STLBest(sender: AnyObject) {
         bg.hidden = true
         stlbg.hidden = false
+        ppbg.hidden = true
         kcbg.hidden = true
         REDBUTTON.hidden = false
         BLUEBUTTON.hidden = true
+        YELLOWBUTTON.hidden = true
+        tMessage.hidden = true
     }
 
 
+    @IBAction func PITBest(sender: AnyObject) {
+    
+        ppbg.hidden = false
+        bg.hidden = true
+        stlbg.hidden = true
+        kcbg.hidden = true
+        REDBUTTON.hidden = true
+        BLUEBUTTON.hidden = true
+        YELLOWBUTTON.hidden = false
+        tMessage.hidden = true
+    }
 
 
 

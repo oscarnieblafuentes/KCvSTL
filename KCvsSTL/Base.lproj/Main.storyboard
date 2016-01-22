@@ -23,6 +23,9 @@
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="kcbg" translatesAutoresizingMaskIntoConstraints="NO" id="ZAN-Vh-VpD">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="pncbg" translatesAutoresizingMaskIntoConstraints="NO" id="aGg-Tr-YeJ">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                            </imageView>
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="bg" translatesAutoresizingMaskIntoConstraints="NO" id="5Xe-tS-5Qs">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                             </imageView>
@@ -46,6 +49,16 @@
                                     <action selector="KCbest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WGo-Ra-Wmx"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNu-LM-hhZ">
+                                <rect key="frame" x="164" y="236" width="235" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
+                                <state key="normal" title="Pittsburgh Pirates">
+                                    <color key="titleColor" red="0.94734182555355373" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="PITBest:" destination="BYZ-38-t0r" eventType="touchUpInside" id="wfP-QN-DVj"/>
+                                </connections>
+                            </button>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Which team is best? ⚾" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zgI-X1-6O4">
                                 <rect key="frame" x="76" y="28" width="285" height="30"/>
                                 <color key="backgroundColor" red="0.89461305628272247" green="0.09554215282411252" blue="0.069127628596702989" alpha="0.0" colorSpace="calibratedRGB"/>
@@ -61,9 +74,12 @@
                     <connections>
                         <outlet property="BLUEBUTTON" destination="O2g-f1-WkJ" id="r6N-O9-QGC"/>
                         <outlet property="REDBUTTON" destination="nMv-he-fQb" id="Xhm-iC-bGt"/>
+                        <outlet property="YELLOWBUTTON" destination="oNu-LM-hhZ" id="Amp-zc-WtJ"/>
                         <outlet property="bg" destination="5Xe-tS-5Qs" id="sNY-5K-zGc"/>
                         <outlet property="kcbg" destination="ZAN-Vh-VpD" id="Xf7-v3-Rbh"/>
+                        <outlet property="ppbg" destination="aGg-Tr-YeJ" id="45w-L7-xee"/>
                         <outlet property="stlbg" destination="WjD-wF-EcQ" id="4W0-k4-i14"/>
+                        <outlet property="tMessage" destination="zgI-X1-6O4" id="NM4-5Z-V4d"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -74,6 +90,7 @@
     <resources>
         <image name="bg" width="1536" height="1024"/>
         <image name="kcbg" width="8618" height="3888"/>
+        <image name="pncbg" width="1024" height="1440"/>
         <image name="stlbg" width="3008" height="2000"/>
     </resources>
 </document>

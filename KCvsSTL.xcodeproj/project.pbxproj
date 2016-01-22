@@ -286,6 +286,7 @@
 				5BF5A2A71C50598B005C903D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
